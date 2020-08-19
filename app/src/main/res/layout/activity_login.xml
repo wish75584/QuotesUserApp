@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:text="User Login"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/actor"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/actor"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:visibility="invisible"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector"
+            android:fontFamily="serif"
+            android:text="login" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont have account?Please create"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
+        android:onClick="signupActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip Login"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

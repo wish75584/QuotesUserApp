@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:text="Create User"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/create_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/actor"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/create_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/actor"
+        android:hint="Contact"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/create_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/actor"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/create_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/actor"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_selector"
+        android:fontFamily="serif"
+        android:text="create"
+        android:elevation="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alredy member?Please Login"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
+        android:onClick="loginActivty"/>
+
+
+</LinearLayout>
